@@ -10,6 +10,8 @@ def sin_graph():
     x = np.arange(0, 2 * np.pi, 0.1)  # start,stop,step
     y = np.sin(x)
     z = np.cos(x)
+    
+    
     #test4535
     plt.plot(x, y, x, z)
     plt.xlabel('x values from 0 to 2pi')  # string must be enclosed with quotes '  '
@@ -19,6 +21,7 @@ def sin_graph():
     plt.show()
 
 
+print(' i will add the best tangent ever')
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     sin_graph()
