@@ -5,12 +5,12 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-
+print('zio pino')
 def sin_graph():
     x = np.arange(0, 2 * np.pi, 0.1)  # start,stop,step
     y = np.sin(x)
     z = np.cos(x)
-    #test
+    #test4535
     plt.plot(x, y, x, z)
     plt.xlabel('x values from 0 to 2pi')  # string must be enclosed with quotes '  '
     plt.ylabel('sin(x) and cos(x)')
