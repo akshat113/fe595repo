@@ -5,23 +5,26 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-print('zio pino')
 def sin_graph():
-    x = np.arange(0, 2 * np.pi, 0.1)  # start,stop,step
+    x = np.arange( 0, 2 * np.pi, 0.1)  # start,stop,step
     y = np.sin(x)
     z = np.cos(x)
-    
+    w = np.tan(x) #ff add tan function
     
     #test4535
-    plt.plot(x, y, x, z)
-    plt.xlabel('x values from 0 to 2pi')  # string must be enclosed with quotes '  '
-    plt.ylabel('sin(x) and cos(x)')
-    plt.title('Plot of sin and cos from 0 to 2pi')
-    plt.legend(['sin(x)', 'cos(x)'])
+    plt.plot(x, y, x, z, x, w)
+    plt.xlabel('x values from 0 to 2pi')
+    plt.ylabel('sin(x), cos(x), tan(x)') #ff update labe y axes
+    plt.title('Plot of sin, cos, tan from 0 to 2pi') #ff update plot title
+    plt.legend(['sin(x)', 'cos(x)', 'tan(x)']) ##ff update legend
+    
+    plt.axhline(y=0, color = 'black') #ff add graphical axis
+    plt.axhline(y=0, color = 'black') #ff add graphical axis
+    axes = plt.gca() #ff get the current Axes instance
+    axes.set_ylim([-1.5 , 1.5 ]) #ff ste y axes limit
     plt.show()
 
 
-print(' i will add the best tangent ever')
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     sin_graph()
